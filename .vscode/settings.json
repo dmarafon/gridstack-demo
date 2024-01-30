@@ -1,0 +1,46 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true,
+      "source.fixAll.eslint": true
+    }
+  },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true,
+      "source.fixAll.eslint": true
+    }
+  },
+  "eslint.validate": ["vue", "javascript", "typescript"],
+  "files.associations": {
+    "**/ci/*.yml": "azure-pipelines"
+  },
+  "windicss.enableCodeFolding": false,
+  "windicss.colorDecoratorsType": "picker",
+  "windicss.foldByLength": true,
+  "css.customData": ["./.vscode/custom.css-data.json"],
+  "vue.codeActions.enabled": true,
+  // https://github.com/prettier/prettier-vscode/issues/3020
+  "prettier.prettierPath": "./node_modules/prettier",
+  "[typescript][vue]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit",
+      "source.fixAll.eslint": "explicit"
+    }
+  }
+}
